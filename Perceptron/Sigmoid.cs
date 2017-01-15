@@ -13,7 +13,7 @@ namespace Perceptron
             return 1.0 / (1 + Math.Exp(input * -1));
         }
 
-        public double MinSquaredError(double input, double target)
+        public double ComputeError(double input, double target)
         {
             var s = Evaluate(input);
             return (target - s) * s * (1 - s);

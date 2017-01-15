@@ -13,7 +13,7 @@ namespace Perceptron
             return input > 0.5 ? 1 : 0;
         }
 
-        public double MinSquaredError(double input, double target)
+        public double ComputeError(double input, double target)
         {
             return (target - input);
         }

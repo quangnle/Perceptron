@@ -9,6 +9,6 @@ namespace Perceptron
     public interface IActivationFunc
     {
         double Evaluate(double input);
-        double MinSquaredError(double input, double target);
+        double ComputeError(double input, double target);
     }
 }

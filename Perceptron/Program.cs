@@ -23,9 +23,9 @@ namespace Perceptron
 
             //var neuron = new SingleNeuron(new LinearUnit());
             var neuron = new SingleNeuron(new Sigmoid());
-            neuron.Initialize(2, 0.5);
+            neuron.Initialize(2, 0.1);
 
-            neuron.Train(data, 100);
+            neuron.Train(data, 500);
 
             var test1 = neuron.Evaluate(new double[] { 3.0, 4.0 }); // ~ 0
             var test2 = neuron.Evaluate(new double[] { 0.0, 1.0 }); // ~ 0

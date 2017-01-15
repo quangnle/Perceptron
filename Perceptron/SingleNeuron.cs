@@ -43,7 +43,7 @@ namespace Perceptron
 
             var s = Sum(input);
 
-            double error = _activation.MinSquaredError(s, target);
+            double error = _activation.ComputeError(s, target);
 
             Weights[0] += _learningRate * error;
             for (int i = 0; i < _nInputs; i++)
